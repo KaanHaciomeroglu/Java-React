@@ -2,8 +2,12 @@ package inheritanceOdev;
 
 public class UserManager{
 	
-	public void user(User user) {
-		System.out.println("Kullanýcý: "+user.getId()+" "+user.getFirstName()+" "+user.getLastName()+" sisteme dahil edildi...");
-		
+	
+	public void student(Student student) {
+		System.out.println("Ogrenci : "+student.getId()+" "+student.getFirstName()+" "+student.getLastName()+" "+student.getStudentNumber()+" sisteme dahil edildi...");
+	}
+	
+	public void instructor(Instructor instructor) {
+		System.out.println("Ogretmen : "+instructor.getId()+" "+instructor.getFirstName()+" "+instructor.getLastName()+" "+instructor.getLectureGiven()+" sisteme dahil edildi...");
 	}
 }
